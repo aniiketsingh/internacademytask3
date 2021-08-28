@@ -7,7 +7,7 @@ with urllib.request.urlopen("https://geolocation-db.com/json") as url:
     data = json.loads(url.read().decode())
     location=data['city']
 
-user_api ="c75577390950ae13bf8a055032986476"
+user_api ="c7557739#######8a055032986476"
 
 complete_api_link = "https://api.openweathermap.org/data/2.5/weather?q="+location+"&appid="+user_api
 api_link = requests.get(complete_api_link)
